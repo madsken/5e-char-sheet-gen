@@ -55,7 +55,7 @@ class Character():
         for stat, value in scores.items():
             if stat in self.ability_scores:
                 self.ability_scores[stat] = value
-        self.hp = self.calculate_hp()
+        self.hp = self.calc_level1_hp()
 
     def add_skill_proficiencies(self, skills: List[Skills]):
         self.skill_proficiencies.extend(skills)
