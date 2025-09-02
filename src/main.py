@@ -53,4 +53,5 @@ def main():
             live.update(handle_selection(choice))
             time.sleep(2)
 
-main()
+if __name__ == "__main__": 
+    main()

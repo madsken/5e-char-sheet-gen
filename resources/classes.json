@@ -1,0 +1,110 @@
+{
+  "Fighter": {
+    "hit_die": 10,
+    "primary_ability": ["Strength", "Dexterity"],
+    "saving_throws": ["Strength", "Constitution"],
+    "armor_proficiencies": ["All armor", "Shields"],
+    "weapon_proficiencies": ["Simple weapons", "Martial weapons"],
+    "tool_proficiencies": [],
+    "skill_choices": {
+      "number_of_choices": 2,
+      "options": [
+        "Acrobatics",
+        "Animal Handling",
+        "Athletics",
+        "History",
+        "Insight",
+        "Intimidation",
+        "Perception",
+        "Survival"
+      ]
+    },
+    "starting_equipment": [
+      "Chain Mail",
+      "Martial Weapon and a Shield OR Two Martial Weapons",
+      "Light Crossbow and 20 bolts OR Two Handaxes",
+      "Dungeoneer's Pack OR Explorer's Pack"
+    ],
+    "level_1_features": [
+      {
+        "name": "Fighting Style",
+        "description": "You adopt a particular style of fighting as your specialty. Choose one of the following options: Archery, Defense, Dueling, Great Weapon Fighting, Protection, or Two-Weapon Fighting."
+      },
+      {
+        "name": "Second Wind",
+        "description": "You can use a bonus action to regain hit points equal to 1d10 + your fighter level. Once per short or long rest."
+      }
+    ]
+  },
+  "Wizard": {
+    "hit_die": 6,
+    "primary_ability": ["Intelligence"],
+    "saving_throws": ["Intelligence", "Wisdom"],
+    "armor_proficiencies": [],
+    "weapon_proficiencies": ["Daggers", "Darts", "Slings", "Quarterstaffs", "Light crossbows"],
+    "tool_proficiencies": [],
+    "skill_choices": {
+      "number_of_choices": 2,
+      "options": [
+        "Arcana",
+        "History",
+        "Insight",
+        "Investigation",
+        "Medicine",
+        "Religion"
+      ]
+    },
+    "starting_equipment": [
+      "Quarterstaff OR Dagger",
+      "Component Pouch OR Arcane Focus",
+      "Scholar's Pack OR Explorer's Pack",
+      "Spellbook"
+    ],
+    "level_1_features": [
+      {
+        "name": "Spellcasting",
+        "description": "You can cast prepared wizard spells using Intelligence as your spellcasting ability. You must prepare spells from your spellbook after a long rest."
+      },
+      {
+        "name": "Arcane Recovery",
+        "description": "Once per day after a short rest, you can recover expended spell slots up to half your wizard level (rounded up)."
+      }
+    ]
+  },
+  "Warlock": {
+    "hit_die": 8,
+    "primary_ability": ["Charisma"],
+    "saving_throws": ["Wisdom", "Charisma"],
+    "armor_proficiencies": ["Light armor"],
+    "weapon_proficiencies": ["Simple weapons"],
+    "tool_proficiencies": [],
+    "skill_choices": {
+      "number_of_choices": 2,
+      "options": [
+        "Arcana",
+        "Deception",
+        "History",
+        "Intimidation",
+        "Investigation",
+        "Nature",
+        "Religion"
+      ]
+    },
+    "starting_equipment": [
+      "Light Crossbow and 20 bolts OR Any Simple Weapon",
+      "Component Pouch OR Arcane Focus",
+      "Scholar's Pack OR Dungeoneer's Pack",
+      "Leather Armor, Any Simple Weapon, and Two Daggers"
+    ],
+    "level_1_features": [
+      {
+        "name": "Otherworldly Patron",
+        "description": "You have struck a bargain with an otherworldly being. Choose a patron such as The Fiend, The Archfey, or The Great Old One."
+      },
+      {
+        "name": "Pact Magic",
+        "description": "Your arcane research and the magic bestowed on you by your patron give you facility with spells. You cast warlock spells using Charisma."
+      }
+    ]
+  }
+}
