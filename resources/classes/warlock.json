@@ -1,0 +1,36 @@
+{
+    "hit_die": 8,
+    "primary_ability": ["Charisma"],
+    "saving_throws": ["Wisdom", "Charisma"],
+    "armor_proficiencies": ["Light armor"],
+    "weapon_proficiencies": ["Simple weapons"],
+    "tool_proficiencies": [],
+    "skill_choices": {
+      "number_of_choices": 2,
+      "options": [
+        "Arcana",
+        "Deception",
+        "History",
+        "Intimidation",
+        "Investigation",
+        "Nature",
+        "Religion"
+      ]
+    },
+    "starting_equipment": [
+      "Light Crossbow and 20 bolts OR Any Simple Weapon",
+      "Component Pouch OR Arcane Focus",
+      "Scholar's Pack OR Dungeoneer's Pack",
+      "Leather Armor, Any Simple Weapon, and Two Daggers"
+    ],
+    "level_1_features": [
+      {
+        "name": "Otherworldly Patron",
+        "description": "You have struck a bargain with an otherworldly being. Choose a patron such as The Fiend, The Archfey, or The Great Old One."
+      },
+      {
+        "name": "Pact Magic",
+        "description": "Your arcane research and the magic bestowed on you by your patron give you facility with spells. You cast warlock spells using Charisma."
+      }
+    ]
+  }

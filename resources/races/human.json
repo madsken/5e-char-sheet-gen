@@ -1,0 +1,8 @@
+{
+  "ability_score_1": ["Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"],
+  "ability_score_2": [],
+  "size": "medium",
+  "speed": 30,
+  "languages": ["Common"],
+  "racial_feats": []
+}

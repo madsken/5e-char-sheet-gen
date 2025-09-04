@@ -1,0 +1,18 @@
+{
+  "skill_proficiencies": ["Athletics", "Intimidation"],
+  "tool_proficiencies": ["Gaming set", "Vehicle (land)"],
+  "languages" : [],
+  "equipment": [
+    "Military rank insignia",
+    "Trophy from fallen enemy",
+    "Bone dice set OR playing card set",
+    "Common clothes",
+    "Pouch containing 10 gp"
+  ],
+  "features": [
+    {
+      "name": "Military Rank",
+      "description": "You have a military rank from your career as a soldier. Soldiers loyal to your former military organization still recognize your authority and influence, and they defer to you if they are of a lower rank. You can invoke your rank to exert influence over other soldiers and requisition simple equipment or horses for temporary use. You can also usually gain access to friendly military encampments and fortresses where your rank is recognized."
+    }
+  ]
+}

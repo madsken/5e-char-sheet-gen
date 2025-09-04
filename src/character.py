@@ -27,6 +27,7 @@ class Character():
 
         # Skills will be populated from class, background, etc.
         self.skill_proficiencies: List[Skills] = []
+        self.skill_proficiencies.extend(background.skill_proficiencies)
         self.saving_throw_proficiencies = self.ch_class.saving_throws
 
         self.hp = self.calc_level1_hp()

@@ -1,0 +1,37 @@
+{
+  "hit_die": 10,
+  "primary_ability": ["Strength", "Dexterity"],
+  "saving_throws": ["Strength", "Constitution"],
+  "armor_proficiencies": ["All armor", "Shields"],
+  "weapon_proficiencies": ["Simple weapons", "Martial weapons"],
+  "tool_proficiencies": [],
+  "skill_choices": {
+    "number_of_choices": 2,
+    "options": [
+      "Acrobatics",
+      "Animal Handling",
+      "Athletics",
+      "History",
+      "Insight",
+      "Intimidation",
+      "Perception",
+      "Survival"
+    ]
+  },
+  "starting_equipment": [
+    "Chain Mail",
+    "Martial Weapon and a Shield OR Two Martial Weapons",
+    "Light Crossbow and 20 bolts OR Two Handaxes",
+    "Dungeoneer's Pack OR Explorer's Pack"
+  ],
+  "level_1_features": [
+    {
+      "name": "Fighting Style",
+      "description": "You adopt a particular style of fighting as your specialty. Choose one of the following options: Archery, Defense, Dueling, Great Weapon Fighting, Protection, or Two-Weapon Fighting."
+    },
+    {
+      "name": "Second Wind",
+      "description": "You can use a bonus action to regain hit points equal to 1d10 + your fighter level. Once per short or long rest."
+    }
+  ]
+}

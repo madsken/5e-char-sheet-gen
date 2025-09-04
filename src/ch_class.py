@@ -1,6 +1,7 @@
 
 import json
 from enum import Enum
+import os
 
 #No bloodhunter, get rekt
 class Classes(Enum):
@@ -19,13 +20,13 @@ class Classes(Enum):
     WIZARD = "Wizard"
 
 class CharacterClass():
-    def __init__(self, class_enum):
-        with open("../resources/classes.json", 'r') as file:
+    def __init__(self, class_json):
+        with open(class_json, 'r') as file:
             classes_data = json.load(file)
         
-        class_info = classes_data[class_enum.value]
+        class_info = classes_data
 
-        self.name = class_enum.value
+        self.name = os.path.basename(class_json)[:-5].capitalize()
         self.hit_die = class_info["hit_die"]
         self.primary_ability = class_info["primary_ability"]
         self.saving_throws = class_info["saving_throws"]

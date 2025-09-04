@@ -1,0 +1,35 @@
+{
+    "hit_die": 6,
+    "primary_ability": ["Intelligence"],
+    "saving_throws": ["Intelligence", "Wisdom"],
+    "armor_proficiencies": [],
+    "weapon_proficiencies": ["Daggers", "Darts", "Slings", "Quarterstaffs", "Light crossbows"],
+    "tool_proficiencies": [],
+    "skill_choices": {
+      "number_of_choices": 2,
+      "options": [
+        "Arcana",
+        "History",
+        "Insight",
+        "Investigation",
+        "Medicine",
+        "Religion"
+      ]
+    },
+    "starting_equipment": [
+      "Quarterstaff OR Dagger",
+      "Component Pouch OR Arcane Focus",
+      "Scholar's Pack OR Explorer's Pack",
+      "Spellbook"
+    ],
+    "level_1_features": [
+      {
+        "name": "Spellcasting",
+        "description": "You can cast prepared wizard spells using Intelligence as your spellcasting ability. You must prepare spells from your spellbook after a long rest."
+      },
+      {
+        "name": "Arcane Recovery",
+        "description": "Once per day after a short rest, you can recover expended spell slots up to half your wizard level (rounded up)."
+      }
+    ]
+  }
