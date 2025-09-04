@@ -46,6 +46,7 @@ class Character():
         return (score - 10) // 2
     
     def collect_proficiencies(self):
+        tool_prof = self.ch_class.tool_proficiencies + self.background.tool_proficiencies
         return {
             "Armor": self.ch_class.armor_proficiencies,
             "Weapons": self.ch_class.weapon_proficiencies,
@@ -56,10 +57,36 @@ class Character():
         for stat, value in scores.items():
             if stat in self.ability_scores:
                 self.ability_scores[stat] = value
+                if stat.value in self.race.ability_score_1:
+                    self.ability_scores[stat] += 1
+                if stat.value in self.race.ability_score_2:
+                    self.ability_scores[stat] += 2
         self.hp = self.calc_level1_hp()
 
     def add_skill_proficiencies(self, skills: List[Skills]):
         self.skill_proficiencies.extend(skills)
+
+    def chose_skill_proficiencies(self):
+        count = self.ch_class.skill_choices['number_of_choices']
+        while count > 0:
+            print("\nCurrent skill proficiencies:")
+            for skill in self.skill_proficiencies:
+                print(skill)
+            print("")
+            print("Available skill to chose from:")
+            for skill in self.ch_class.skill_choices["options"]:
+                print(skill)
+            print("")
+            chosen_skill = input(f"Please chose a skill to become proficient in ({count} left): \n")
+
+            if chosen_skill.capitalize() in self.skill_proficiencies:
+                print("ERROR: Skill is already proficient. Chose another.")
+                continue
+        
+            self.skill_proficiencies.append(chosen_skill.capitalize())
+            count -= 1
+        print("===Final Skills===")
+        print(self.skill_proficiencies)
 
     def __str__(self):
         print_str = f"{self.name}, Level {self.level} {self.ch_class.name} ({self.race})\n\n"
