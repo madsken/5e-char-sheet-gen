@@ -10,3 +10,6 @@ It will look for json files related to backgrounds, races and classes in the res
 You will be able to list and select found background, classes and races via the program.
 
 Once a background, class and race has been selected, the program can generate the character for you
+
+
+test commit
