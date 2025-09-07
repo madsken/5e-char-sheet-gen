@@ -1,15 +1,24 @@
 # 5e-char-sheet-gen
-Generates a character sheet for 5th edition dnd (2014)
+Generates a character sheet for 5th edition dnd (2014) in terminal
 
 
 ## How to use
-Running the program with the main.sh script starts the program
+Run the `main.sh` script, make sure to mark it as executable 
 
-It will look for json files related to backgrounds, races and classes in the resource folder
+    sudo chmod +x main.sh
 
-You will be able to list and select found background, classes and races via the program.
+1. Chose race
+    - Chose one of the available races in `resources/races/`
+2. Chose background
+    - Chose one of the available backgrounds in `resources/backgrounds/`
+3. Chose class
+    - Chose one of the available classes in `resources/classes/`
+4. Create character
+    - Name the character
+    - Assign rolled scores to stats
+    - Chose profficient skills
 
-Once a background, class and race has been selected, the program can generate the character for you
+## Add more races, background or classes
+More races, backgrounds and races can be created by making a corrosponding `.json` file in the corrosponding folder in `resources`
 
-
-test commit
+Templates have been provided in `resources`
