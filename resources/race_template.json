@@ -1,0 +1,17 @@
+{
+  "ability_score_1": ["Strength"],
+  "ability_score_2": ["Dexterity"],
+  "size": "medium",
+  "speed": 30,
+  "languages": ["Common"],
+  "racial_feats": [
+    {
+      "name": "Name of feat 1",
+      "description": "Description of feat 1"
+    },
+    {
+      "name": "Name of feat 2",
+      "description": "Description of feat 2"
+    }
+  ]
+}

@@ -38,16 +38,7 @@ class CharacterClass():
         self.level_1_features = class_info["level_1_features"]
 
     def __repr__(self):
-        print_str = ""
-        print_str += f"Class: {self.name}\n\n"
-        print_str += f"Hit die: d{self.hit_die}\n"
-        print_str += f"Saving Throws: {self.saving_throws}\n"
-        print_str += f"Armor proficiencies: {self.armor_proficiencies}\n"
-        print_str += f"Weapon proficiencies: {self.weapon_proficiencies}\n"
-        print_str += f"Tool proficiencies: {self.tool_proficiencies} \n"
-        print_str += f"Skill choices: Chose {self.skill_choices['number_of_choices']} \n"
-        print_str += f"{self.skill_choices["options"]}\n"        
-        return print_str
+        return f"{self.name}"
 
 
 if __name__=='__main__':

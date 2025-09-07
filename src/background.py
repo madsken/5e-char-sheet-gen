@@ -17,11 +17,4 @@ class Background:
     
 
     def __repr__(self):
-        print_str = ""
-        print_str += f"background name: {self.name}\n\n"
-        print_str += f"skill prof: {self.skill_proficiencies}\n"
-        print_str += f"tool prof: {self.tool_proficiencies}\n"
-        print_str += f"language: {self.languages}\n"
-        print_str += f"equipment: {self.equipment}\n"
-        print_str += f"features: {self.features} \n"
-        return print_str
+        return f"{self.name}"

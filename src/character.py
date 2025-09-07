@@ -89,18 +89,14 @@ class Character():
         print(self.skill_proficiencies)
 
     def __str__(self):
-        print_str = f"{self.name}, Level {self.level} {self.ch_class.name} ({self.race})\n\n"
-        print_str += f"Ability scores:\n"
+        print_str = f"\n=== Name: {self.name}, Level: {self.level}, Class: {self.ch_class.name}, Race: {self.race} ==="
+        print_str += f"\nAbility scores:\n"
         for stat, score in self.ability_scores.items():
             print_str += f"{stat.value} : {score}\n"
-        
-        print_str += f"HP: {self.hp}\n"
+        print_str += f"\nHP: {self.hp}\n"
         print_str += f"Hit dice: {self.hit_dice_max}d{self.hit_dice_type}\n\n"
-
         print_str += f"Skill proficiencies: {self.skill_proficiencies}\n\n"
         print_str += f"Saving throw proficiencies: {self.saving_throw_proficiencies}\n\n"
-
-
         return print_str
 
 
